@@ -1,0 +1,115 @@
+/* Place your CSS styles in this file */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav {
+    background-color: rgba(255, 187, 0, 0.801);
+    height: 80px;
+    width: 100%;
+}
+label.logo {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    
+}
+nav ul li a {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.checkbtn{
+    font-size: 24px;
+    float: right;
+    line-height: 80px;
+    color: white;
+    display: none;
+    margin-right: 20px;
+}
+#check {
+    display: none;
+}
+.feed {
+    margin: 10px;
+    padding: 20px;
+
+
+}
+.tab1 {
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px black;
+    padding: 10px;
+}
+.tab1 img {
+    width:70%;
+    height: 400px;
+}
+.tab1 p {
+    text-align: justify;
+}
+footer {
+    background-color: black;
+    width: 100%;
+   
+}
+footer p {
+    text-align: center;
+    color: white;
+    
+    
+    padding: 10px;
+}
+@media(max-width:850px) {
+label.logo {
+    font-size : 24px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.tab1 {
+    
+}
+.tab1 img {
+    width:70%;
+    height: 200px;
+}
+ul {
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    top: 80px;
+    left: -100%;
+    background-color: rgb(185, 245, 245);
+    transition: .5s;
+    text-align: center;
+
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    font-size: 20px;
+}
+.checkbtn {
+    display: block;
+}
+#check:checked ~ ul {
+    left: 0;
+}
+}
